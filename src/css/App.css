@@ -28,4 +28,74 @@ body {
   font-family: DS-Digital;
   font-size: 45px;
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  height: 390px;
+  border: 2px solid black;
+}
+
+.container .buttons {
+  position: relative;
+}
+
+.container .buttons button {
+  position: relative;
+  width: 80px;
+  height: 65px;
+  color: white;
+  font-size: 20px;
+  background: #4d4d4d;
+  border: none;
+  outline: 0.05em solid black;
+}
+
+.container .buttons button:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+}
+
+.container .buttons .operator {
+  background: #b3b3b3;
+}
+
+.container .buttons .zero {
+  width: 160px;
+}
+
+.container .buttons .ac {
+  width: 160px;
+  background: red;
+}
+
+.container .buttons .dblheight {
+  height: 130px;
+  position: absolute;
+}
+
+.display {
+  height: 65px;
+  width: 320px;
+  font-family: DS-Digital;
+  font-size: 25px;
+  color: white;
+  background: black;
+  text-align: right;
+}
+
+.display p {
+  padding-right: 10px;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=App.css.map */

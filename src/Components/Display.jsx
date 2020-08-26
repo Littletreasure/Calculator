@@ -4,7 +4,12 @@ import "../css/App.css";
 class Display extends Component {
   state = {};
   render() {
-    return <p>Display</p>;
+    const { input, result, displayResult } = this.props;
+    return (
+      <div className="display" id="display">
+        <p>{displayResult ? result : input}</p>
+      </div>
+    );
   }
 }
 export default Display;

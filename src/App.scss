@@ -31,3 +31,59 @@ body {
     font-size: 45px;
   }
 }
+.container {
+  @include display-style(column);
+  width: 320px;
+  height: 390px;
+  border: 2px solid black;
+
+  .buttons {
+    position: relative;
+
+    button {
+      position: relative;
+      width: 80px;
+      height: 65px;
+      color: white;
+      font-size: 20px;
+      background: #4d4d4d;
+      border: none;
+      outline: 0.05em solid black;
+      &:hover {
+        color: black;
+        outline: 0.05em solid grey;
+        z-index: 3;
+      }
+    }
+
+    .operator {
+      background: #b3b3b3;
+    }
+    .zero {
+      width: 160px;
+    }
+    .ac {
+      width: 160px;
+      background: red;
+    }
+    .dblheight {
+      height: 130px;
+      position: absolute;
+    }
+  }
+}
+
+.display {
+  height: 65px;
+  width: 320px;
+  font-family: DS-Digital;
+  font-size: 25px;
+  color: white;
+  background: black;
+  text-align: right;
+
+  & p {
+    padding-right: 10px;
+    margin-top: 20px;
+  }
+}
