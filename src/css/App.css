@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "DS-Digital";
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot");
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff") format("woff"), url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.svg#DS-Digital") format("svg");
+}
+
+body {
+  background: #d9d9d9;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App h1 {
+  margin-bottom: 30px;
+  font-family: DS-Digital;
+  font-size: 45px;
+}
+/*# sourceMappingURL=App.css.map */

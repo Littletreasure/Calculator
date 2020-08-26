@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "DS-Digital";
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot");
+  src: url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.svg#DS-Digital")
+      format("svg");
+}
+@mixin display-style($dir) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: center;
+}
+
+body {
+  background: #d9d9d9;
+}
+.App {
+  @include display-style(column);
+  height: 100vh;
+  margin: 0;
+  & h1 {
+    margin-bottom: 30px;
+    font-family: DS-Digital;
+    font-size: 45px;
+  }
+}
