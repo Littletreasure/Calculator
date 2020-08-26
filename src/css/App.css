@@ -58,6 +58,7 @@ body {
   background: #4d4d4d;
   border: none;
   outline: 0.05em solid black;
+  z-index: 1;
 }
 
 .container .buttons button:hover {
@@ -79,9 +80,11 @@ body {
   background: red;
 }
 
-.container .buttons .dblheight {
+.container .buttons .equals {
   height: 130px;
   position: absolute;
+  background: #0066cc;
+  z-index: 2;
 }
 
 .display {

@@ -22,15 +22,17 @@ class Calculator extends Component {
   };
 
   handleEqlClick = (e) => {
-    const sum = this.state.input.replace(/x/g, "*");
-    const result = eval(sum);
-    this.setState({
-      result: result,
-      prevResult: true,
-      displayResult: true,
-      input: result.toString(),
-      currentNum: "",
-    });
+    if (this.state.input.length > 0) {
+      const sum = this.state.input.replace(/x/g, "*");
+      const result = eval(sum);
+      this.setState({
+        result: result,
+        prevResult: true,
+        displayResult: true,
+        input: result.toString(),
+        currentNum: "",
+      });
+    }
   };
 
   handleOperatorClick = (e) => {
@@ -81,11 +83,6 @@ class Calculator extends Component {
   };
 
   render() {
-    const eqlstyle = {
-      height: 130,
-      position: "absolute",
-      background: "#0066cc",
-    };
     const { input, result, displayResult } = this.state;
     return (
       <div className="container">
@@ -165,8 +162,8 @@ class Calculator extends Component {
             3
           </button>
           <button
-            style={eqlstyle}
             id="equals"
+            className="equals"
             value="="
             onClick={this.handleEqlClick}
           >

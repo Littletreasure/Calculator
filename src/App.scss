@@ -49,6 +49,7 @@ body {
       background: #4d4d4d;
       border: none;
       outline: 0.05em solid black;
+      z-index: 1;
       &:hover {
         color: black;
         outline: 0.05em solid grey;
@@ -66,9 +67,11 @@ body {
       width: 160px;
       background: red;
     }
-    .dblheight {
+    .equals {
       height: 130px;
       position: absolute;
+      background: #0066cc;
+      z-index: 2;
     }
   }
 }
